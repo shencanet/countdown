@@ -87,7 +87,12 @@
             hh.style.strokeDashoffset = 440 - (h * (440 / 24));
             mm.style.strokeDashoffset = 440 - (m * (440 / 60));
             ss.style.strokeDashoffset = 440 - (s * (440 / 60));
-            
+
+            if(distance <0){
+                clearInterval(x);
+                document.getElementById('time').style.display = "none";
+            }
+
 
         })
 
